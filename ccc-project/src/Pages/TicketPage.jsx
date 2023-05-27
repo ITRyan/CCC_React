@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Sidebar from "../Components/Sidebar";
 const TicketPage = () => {
   return (
-    <div>TicketPage</div>
+    <Sidebar/>
   )
 }
 
