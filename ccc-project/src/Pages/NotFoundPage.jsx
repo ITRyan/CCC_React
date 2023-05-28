@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Sidebar from "../Components/Sidebar";
 const NotFoundPage = () => {
   return (
-    <div><h1>404 NotFound</h1> </div>
+    <Sidebar/>
   )
 }
 

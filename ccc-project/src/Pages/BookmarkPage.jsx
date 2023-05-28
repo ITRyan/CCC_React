@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Sidebar from "../Components/Sidebar"
 const BookmarkPage = () => {
   return (
-    <div>BookmarkPage</div>
+    <Sidebar/>
+    
   )
 }
 

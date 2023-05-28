@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React, { useState } from "react";
+import Sidebar from "../Components/Sidebar";
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <>
+      <Sidebar />
+      <h1>hello world</h1>
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
