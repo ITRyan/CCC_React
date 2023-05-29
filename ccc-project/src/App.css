@@ -1,6 +1,7 @@
 .App {
  width:100 vw;
  height: 100vh;
+ background:#241623;
 }
 
 body{
@@ -11,14 +12,21 @@ body{
 
 .Sidebar{
   height: 100%;
-  width: 200px;
-  background-color: #3E3E3E;
+  width: 120px;
+  background-color: #2F2F2F;
+  border-right:1px solid #6c6c6c;
 }
 
 .SidebarList{
-  height:auto;
+  /*height:auto;
   padding: 0;
-  width: 100%;
+  width: 100%;*/
+  display: flex;  
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 8px;
 }
 
 .SidebarList .row{
@@ -26,7 +34,7 @@ body{
  height: 50px;
  border:  1 px solid black;
  list-style-type:none;
- margin: 0%;
+ margin: 24px;
  display: flex;
  flex-direction:column;
  color: aliceblue;
@@ -34,6 +42,8 @@ body{
  align-items: center;
  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
 /* .row #icon {
   flex: 30%;
   display:grid;
@@ -43,3 +53,136 @@ body{
 .row #title {
   flex:70%
 } */
+
+
+/*-----------Heading CSS -------------*/
+
+.heading-div {
+  display:flex;
+  flex-direction: row;
+}
+
+.heading-container {
+  position:relative;
+  bottom: 64rem;
+  left:12rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  width:100%;
+  background-color: #2F2F2F;
+  border: 1px solid #6C6C6C;
+}
+
+.heading-container p {
+  position:relative;
+  padding-left:1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  top: 0.5rem;
+}
+
+/*-----------Heading CSS -------------*/
+
+
+
+/*-----------Product Card CSS -------------*/
+.container {
+  position:relative;
+  bottom:84rem;
+  right:-3rem;
+}
+
+.column {
+  display:inline-table;
+  margin-right:8rem;
+  width: 30%;
+}
+
+.card-content {
+  background-color: transparent;
+  padding: 1.5rem;
+  padding-top:0px;
+}
+
+.card-image {
+  display:flex;
+  position:relative;
+  justify-content: center;
+}
+
+.image {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    margin:1rem;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+
+.back-img {
+  position:relative;
+  top:30rem;
+  right:10rem;
+  height:20rem;
+}
+
+.product-card {
+  background-color: #0000004d;
+  border: 2px solid #00F0E4;
+  box-shadow: 0px 2px 26px 8px rgb(91 255 250 / 30%), -2px -2px 2px rgba(255, 255, 255, 0.5);
+  color: white;
+  text-align: center;
+  font-family: cursive;
+  max-width: 350px;
+  height: 666px;
+}
+
+.title.is-4 {
+  color:white;
+  font-weight:900;
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+.hit-rate {
+  font-size:1.5rem;
+}
+
+.separator {
+  border:none;
+  border-top:1px solid #3D3B3D;
+  background-color: #3D3B3D;
+  margin-bottom: -0.5rem ;
+  position: relative;
+  top: -2rem;
+}
+
+
+/*-----------Product Card CSS -------------*/
+
+
+.carousel {
+  position: relative;
+    width: 95%;
+    left: 6%;
+    bottom: 67rem;
+}
+
+.w-100 {
+  width: 100%!important;
+}
+
+.d-block {
+  display: block!important;
+}
