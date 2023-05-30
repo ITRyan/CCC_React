@@ -1,27 +1,16 @@
 .App {
- width:100 vw;
- height: 100vh;
- background:#241623;
+  background: #241623;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  background:#241623;
-}
-
-.Sidebar{
+.Sidebar {
   height: 100%;
   width: 120px;
-  background-color: #2F2F2F;
-  border-right:1px solid #6c6c6c;
+  background-color: #2f2f2f;
+  border-right: 1px solid #6c6c6c;
 }
 
-.SidebarList{
-  /*height:auto;
-  padding: 0;
-  width: 100%;*/
-  display: flex;  
+.SidebarList {
+  display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -29,55 +18,44 @@ body{
   padding-left: 8px;
 }
 
-.SidebarList .row{
- width:100%;
- height: 50px;
- border:  1 px solid black;
- list-style-type:none;
- margin: 24px;
- display: flex;
- flex-direction:column;
- color: aliceblue;
- justify-content: center;
- align-items: center;
- font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.SidebarList .row {
+  width: 100%;
+  height: 50px;
+  border: 1 px solid black;
+  list-style-type: none;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-
-/* .row #icon {
-  flex: 30%;
-  display:grid;
-  place-items: center;
-}
-
-.row #title {
-  flex:70%
-} */
-
 
 /*-----------Heading CSS -------------*/
 
 .heading-div {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
 
 .heading-container {
-  position:relative;
+  position: relative;
   bottom: 64rem;
-  left:12rem;
+  left: 12rem;
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
-  width:100%;
-  background-color: #2F2F2F;
-  border: 1px solid #6C6C6C;
+  width: 100%;
+  background-color: #2f2f2f;
+  border: 1px solid #6c6c6c;
 }
 
 .heading-container p {
-  position:relative;
-  padding-left:1rem;
+  position: relative;
+  padding-left: 1rem;
   color: white;
   font-weight: 600;
   font-size: 2rem;
@@ -86,39 +64,37 @@ body{
 
 /*-----------Heading CSS -------------*/
 
-
-
 /*-----------Product Card CSS -------------*/
 .container {
-  position:relative;
-  bottom:84rem;
-  right:-3rem;
+  position: relative;
+  bottom: 84rem;
+  right: -3rem;
 }
 
 .column {
-  display:inline-table;
-  margin-right:8rem;
+  display: inline-table;
+  margin-right: 8rem;
   width: 30%;
 }
 
 .card-content {
   background-color: transparent;
   padding: 1.5rem;
-  padding-top:0px;
+  padding-top: 0px;
 }
 
 .card-image {
-  display:flex;
-  position:relative;
+  display: flex;
+  position: relative;
   justify-content: center;
 }
 
 .image {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-    margin:1rem;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  margin: 1rem;
 }
 
 .image img {
@@ -129,18 +105,18 @@ body{
   position: relative;
 }
 
-
 .back-img {
-  position:relative;
-  top:30rem;
-  right:10rem;
-  height:20rem;
+  position: relative;
+  top: 30rem;
+  right: 10rem;
+  height: 20rem;
 }
 
 .product-card {
   background-color: #0000004d;
-  border: 2px solid #00F0E4;
-  box-shadow: 0px 2px 26px 8px rgb(91 255 250 / 30%), -2px -2px 2px rgba(255, 255, 255, 0.5);
+  border: 2px solid #00f0e4;
+  box-shadow: 0px 2px 26px 8px rgb(91 255 250 / 30%),
+    -2px -2px 2px rgba(255, 255, 255, 0.5);
   color: white;
   text-align: center;
   font-family: cursive;
@@ -149,40 +125,208 @@ body{
 }
 
 .title.is-4 {
-  color:white;
-  font-weight:900;
-  font-size:2rem;
-  margin-bottom:1rem;
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hit-rate {
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 .separator {
-  border:none;
-  border-top:1px solid #3D3B3D;
-  background-color: #3D3B3D;
-  margin-bottom: -0.5rem ;
+  border: none;
+  border-top: 1px solid #3d3b3d;
+  background-color: #3d3b3d;
+  margin-bottom: -0.5rem;
   position: relative;
   top: -2rem;
 }
 
-
 /*-----------Product Card CSS -------------*/
-
 
 .carousel {
   position: relative;
-    width: 95%;
-    left: 6%;
-    bottom: 67rem;
+  width: 95%;
+  left: 6%;
+  bottom: 67rem;
 }
 
 .w-100 {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .d-block {
-  display: block!important;
+  display: block !important;
 }
+/*-----------Login Card CSS -------------*/
+.login {
+  justify-content: center;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-left: 20rem;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  padding-right: 20rem;
+  align-self: center;
+  margin-top: 0.5rem;
+
+  border-radius: 0.375rem;
+}
+
+.Signin {
+  color: white;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.Input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.block {
+  border-radius: 0.375rem; /* This is equivalent to rounded-md */
+  padding-left: 1.5rem; /* This is equivalent to px-6 */
+  padding-right: 1.5rem; /* This is equivalent to px-6 */
+  padding-top: 1.5rem; /* This is equivalent to pt-6 */
+  padding-bottom: 0.25rem; /* This is equivalent to pb-1 */
+  width: 100%; /* This is equivalent to w-full */
+  font-size: 1rem; /* This is equivalent to text-md */
+  color: #fff; /* This is equivalent to text-white */
+  background-color: #4b5563; /* This is equivalent to bg-neutral-700 */
+  appearance: none; /* This is equivalent to appearance-none */
+  outline: none; /* This is equivalent to focus:outline-none */
+  box-shadow: none; /* This is equivalent to focus:ring-0 */
+  border: none; /* This is equivalent to peer */
+  border-bottom: 1px solid #e5e7eb; /* This is equivalent to invalid:border-b-1 */
+}
+.block::placeholder {
+  color: #9ca3af; /* This is equivalent to placeholder */
+}
+.absolute {
+  position: absolute;
+}
+.text-md {
+  font-size: 1rem;
+}
+.text-zinc-400 {
+  color: #f6e05e;
+}
+.duration-150 {
+  transition-duration: 0.15s;
+}
+.transform {
+  transform: none;
+}
+-translate-y-3 {
+  transform: translateY(-0.75rem);
+}
+.scale-75 {
+  transform: scale(0.75);
+}
+.top-4 {
+  top: 1rem;
+}
+.z-10 {
+  z-index: 10;
+}
+.origin-[0] {
+  transform-origin: 0%;
+}
+.left-6 {
+  left: 1.5rem;
+}
+.peer-placeholder-shown\:scale-100:placeholder-shown {
+  transform: scale(1);
+}
+.peer-placeholder-shown\:translate-y-0:placeholder-shown {
+  transform: none;
+}
+.peer-focus\:scale-75:focus {
+  transform: scale(0.75);
+}
+.peer-focus\:-translate-y-3:focus {
+  transform: translateY(-0.75rem);
+}
+.relative {
+  position: relative;
+}
+
+
+.flex {
+  display: flex;
+}
+.Input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bg-red-600 {
+  background-color: #DC2626;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.hover\:bg-red-700:hover {
+  background-color: #B91C1C;
+}
+
+.transition {
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.bg-red-600.py-3.text-white.rounded-md.w-full.mt-10.hover\:bg-red-700.transition:hover {
+  background-color: #B91C1C;
+}
+.text-neutral-500 {
+  color: #6B7280;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.text-white {
+  color: #FFFFFF; /* sets the text color to white */
+}
+
+.ml-1 {
+  margin-left: 1rem; /* sets the left margin to 1rem */
+}
+
+.hover\:underline:hover {
+  text-decoration: underline; /* underlines the text when the element is hovered over */
+}
+
+.cursor-pointer {
+  cursor: pointer; /* sets the cursor to a pointer */
+}
+
+/*-----------Login Card CSS -------------*/
