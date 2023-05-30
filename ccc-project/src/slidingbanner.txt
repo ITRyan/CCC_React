@@ -1,0 +1,72 @@
+import React, { useState, useEffect, useRef } from "react";
+
+function SlidingBanner({ images }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [imageWidth, setImageWidth] = useState(0);
+  const bannerRef = useRef(null);
+  const touchStartX = useRef(0);
+
+  useEffect(() => {
+    // 計算圖片寬度並設定橫幅寬度
+    const image = new Image();
+    image.onload = () => {
+      setImageWidth(image.width);
+      bannerRef.current.style.width = `${currentIndex * imageWidth}px`;
+    };
+    image.src = images[0].src; 
+
+    // % 求餘數，做loop效果
+    //image.length 指既係image既總數，當images.length既值變useEffect就會run
+    const intervalId = setInterval(() => {
+      setCurrentIndex((currentIndex + 1) % images.length);
+    }, 3000); 
+
+    // 清除定時器，令intervalId不會重復執行，不清除可能會喺useEffect重新loop既時候加多左次定時器
+    return () => clearInterval(intervalId);
+  }, [images.length]
+  );
+
+  const handleTouchStart = (event) => {
+    touchStartX.current = event.touches[0].clientX;
+  };
+
+  const handleTouchMove = (event) => {
+    const touchX = event.touches[0].clientX;
+    const deltaX = touchX - touchStartX.current;
+    bannerRef.current.style.transform = `translateX(-${currentIndex * imageWidth + deltaX}px)`;
+  };
+
+  const handleTouchEnd = (event) => {
+    const touchX = event.changedTouches[0].clientX;
+    const deltaX = touchX - touchStartX.current;
+    const threshold = imageWidth / 3; // 設定觸發滑動的閾值為圖片寬度的三分之一
+    if (deltaX < -threshold && currentIndex < images.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else if (deltaX > threshold && currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+    bannerRef.current.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+  };
+
+  return (
+    <div
+      className="sliding-banner"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+      ref={bannerRef}
+      style={{
+        width: `${imageWidth * images.length}px`,
+        transform: `translateX(-${currentIndex * imageWidth}px)`,
+        transition: "transform 0.5s ease-in-out",
+        overflow: "hidden"
+      }}
+    >
+      {images.map((image) => (
+        <img key={image.src} src={image.src} alt={image.alt}/>
+      ))}
+    </div>
+  );
+}
+
+export default SlidingBanner;

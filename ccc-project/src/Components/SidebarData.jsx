@@ -15,12 +15,12 @@ export const SidebarData = [
     link: "/bookmark",
   },
   {
-    title: "ticket",
+    title: "Ticket",
     icon: <ConfirmationNumberIcon />,
     link: "/ticket",
   },
   {
-    title: "profile",
+    title: "Profile",
     icon: <AccountBoxIcon />,
     link: "/profile",
   },

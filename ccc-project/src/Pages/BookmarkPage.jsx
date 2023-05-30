@@ -7,4 +7,4 @@ const BookmarkPage = () => {
   )
 }
 
-export default BookmarkPage
+export default BookmarkPage;
