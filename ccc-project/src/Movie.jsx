@@ -1,10 +1,11 @@
 import React from 'react';
-import MoviePage from './Pages/MoviePage';
+import swpage from '../images/sw.png';
+import "../App.css";
 
-const HomeMovieApp = () => {
+const Movie = () => {
   return (
     <div>
-      <MoviePage
+      <Movie
         title="Star Wars: Episode VII - The Force Awakens"
         description="As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace."
         genre="Action, Adventure, Sci-Fi"
@@ -13,10 +14,10 @@ const HomeMovieApp = () => {
         releaseDate="December 17, 2015"
         venue
         imdbLink="https://www.imdb.com/title/tt2488496/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_star%2520wars%2520awaken"
-        img={"./images/sw.png"}
+        img={swpage}
       />
 
-      <MoviePage
+      <Movie
         title="John Wick: Chapter 4"
         description="John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes."
         genre="Action, Crime, Thriller"
@@ -28,7 +29,7 @@ const HomeMovieApp = () => {
         img={"src/images/jw4.jpeg"}
       />
 
-      <MoviePage
+      <Movie
         title="Fast X"
         description="Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes."
         genre="Action, Adventure, Crime"
@@ -43,4 +44,4 @@ const HomeMovieApp = () => {
   );
 };
 
-export default HomeMovieApp;
+export default Movie;

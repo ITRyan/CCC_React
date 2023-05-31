@@ -11,6 +11,16 @@ import fastx from "../img/FastX.jpg";
 import crown from "../icn/icn_crown.svg";
 import CarouselBanner from "../Components/SlidingBanner.jsx";
 import Sidebar from "../Components/Sidebar";
+import { Link } from 'react-router-dom';
+
+
+const PictureComponent = ({ image, alt, destination }) => {
+  return (
+    <Link to={destination}>
+      <img src={image} alt={alt} />
+    </Link>
+  );
+};
 
 const HomePage = () => {
   const [count, setCount] = useState([0, 0, 0]); //default click = 0
@@ -20,6 +30,7 @@ const HomePage = () => {
     newCount[index] += 1;
     setCount(newCount);
   };
+
   //movie sequen [id = index] array
 
   return (
@@ -36,6 +47,7 @@ const HomePage = () => {
         <section className="section">
           <div className="columns">
             <div className="column is-4" onClick={() => handleClick(0)}>
+              
               <img className="back-img" src={num1} />
               <ProductCard
                 title="Star Wars: The Force Awakens"
@@ -45,6 +57,7 @@ const HomePage = () => {
             </div>
 
             <div className="column is-4" onClick={() => handleClick(1)}>
+              <PictureComponent />
               <img className="back-img" src={num2} />
               <ProductCard
                 title="John Wick"
@@ -54,6 +67,7 @@ const HomePage = () => {
             </div>
 
             <div className="column is-4" onClick={() => handleClick(2)}>
+              <PictureComponent />
               <img className="back-img" src={num3} />
               <ProductCard
                 title="Fast X"
