@@ -11,16 +11,7 @@ import fastx from "../img/FastX.jpg";
 import crown from "../icn/icn_crown.svg";
 import CarouselBanner from "../Components/SlidingBanner.jsx";
 import Sidebar from "../Components/Sidebar";
-import { Link } from 'react-router-dom';
 
-
-const PictureComponent = ({ image, alt, destination }) => {
-  return (
-    <Link to={destination}>
-      <img src={image} alt={alt} />
-    </Link>
-  );
-};
 
 const HomePage = () => {
   const [count, setCount] = useState([0, 0, 0]); //default click = 0
@@ -35,48 +26,49 @@ const HomePage = () => {
 
   return (
     <>
-    <Sidebar/>
-      <CarouselBanner />
-      <div className="heading-div">
-        <div className="heading-container">
-          <img src={crown} />
-          <p className="heading-text">Top Rated Movie</p>
-        </div>
-      </div>
-      <div className="container">
-        <section className="section">
-          <div className="columns">
-            <div className="column is-4" onClick={() => handleClick(0)}>
-              
-              <img className="back-img" src={num1} />
-              <ProductCard
-                title="Star Wars: The Force Awakens"
-                img={starwar}
-                hitrate={"Hit Rate: " + count[0]}
-              />
-            </div>
-
-            <div className="column is-4" onClick={() => handleClick(1)}>
-              <PictureComponent />
-              <img className="back-img" src={num2} />
-              <ProductCard
-                title="John Wick"
-                img={johnwick}
-                hitrate={"Hit Rate: " + count[1]}
-              />
-            </div>
-
-            <div className="column is-4" onClick={() => handleClick(2)}>
-              <PictureComponent />
-              <img className="back-img" src={num3} />
-              <ProductCard
-                title="Fast X"
-                img={fastx}
-                hitrate={"Hit Rate: " + count[2]}
-              />
-            </div>
+      <Sidebar/>
+      <div className="home-body">
+        <CarouselBanner />
+      
+        <div className="heading-div">
+          <div className="heading-container">
+            <img src={crown} />
+            <p className="heading-text">Top Rated Movie</p>
           </div>
-        </section>
+        </div>
+
+        <div className="product-container">
+          <section className="section">
+            <div className="columns">
+              <div className="column" onClick={() => handleClick(0)}>
+                <img className="back-img" src={num1} />
+                <ProductCard
+                  title="Star Wars: The Force Awakens"
+                  img={starwar}
+                  hitrate={"Hit Rate: " + count[0]}
+                />
+              </div>
+
+              <div className="column" onClick={() => handleClick(1)}>
+                <img className="back-img" src={num2} />
+                <ProductCard
+                  title="John Wick"
+                  img={johnwick}
+                  hitrate={"Hit Rate: " + count[1]}
+                />
+              </div>
+
+              <div className="column" onClick={() => handleClick(2)}>
+                <img className="back-img" src={num3} />
+                <ProductCard
+                  title="Fast X"
+                  img={fastx}
+                  hitrate={"Hit Rate: " + count[2]}
+                />
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </>
   );
