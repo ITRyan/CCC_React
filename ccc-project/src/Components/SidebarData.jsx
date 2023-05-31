@@ -10,9 +10,9 @@ export const SidebarData = [
     link: "/home",
   },
   {
-    title: "Bookmark",
+    title: "Movie",
     icon: <BookmarkIcon />,
-    link: "/bookmark",
+    link: "/Movie",
   },
   {
     title: "Ticket",

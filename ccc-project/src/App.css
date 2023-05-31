@@ -330,3 +330,45 @@
 }
 
 /*-----------Login Card CSS -------------*/
+
+
+.movie-title {
+  color: white;
+}
+
+.movie-details {
+  color: whitesmoke;
+}
+
+.return-button {
+  color: rgb(148, 17, 17);
+  text-decoration: none;
+}
+
+.poster-image {
+  width: 200px;
+}
+
+.title,
+.show-date {
+  color: white;
+}
+
+.venue-dropdown {
+  color: white;
+  background-color: #222;
+  border: none;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.book-now-button,
+.imdb-button {
+  margin-right: 50px;
+  color: red;
+  background-color: #3d3b3d;
+  border-radius: 1rem;
+}
+
