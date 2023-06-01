@@ -38,7 +38,7 @@ const HomePage = () => {
         </div>
 
         <div className="product-container">
-          <section className="section">
+          {/* <section className="section"> */}
             <div className="columns">
               <div className="column" onClick={() => handleClick(0)}>
                 <img className="back-img" src={num1} />
@@ -67,7 +67,7 @@ const HomePage = () => {
                 />
               </div>
             </div>
-          </section>
+          {/* </section> */}
         </div>
       </div>
     </>
