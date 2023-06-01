@@ -7,7 +7,7 @@ const ProfilePage = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <>
+    <div className="profilepage">
       <div className="flex">
         <Sidebar />
         <div className="login">
@@ -34,11 +34,12 @@ const ProfilePage = () => {
               value={password}
             />
           </div>
+          <hr className="login-separator"/>
           <button className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">Login</button>
-          <p className="text-neutral-500 mt-12">Frist time using?<span className="text-white ml-1 hover:underline cursor-pointer">Create and account</span></p>
+          <p className="text-neutral-500 mt-12">Want to join us?<span className="text-white ml-1 hover:underline cursor-pointer">Create an account</span></p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

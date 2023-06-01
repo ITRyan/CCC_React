@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import ProductCard from "../Components/ProductCardComponent.jsx";
-import "bulma/css/bulma.min.css";
+//import "bulma/css/bulma.min.css";
 import num1 from "../img/1.png";
 import num2 from "../img/2.png";
 import num3 from "../img/3.png";

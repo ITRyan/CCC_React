@@ -11,7 +11,7 @@ function Sidebar() {
             <li key={key} 
             className="row" onClick={()=>{window.location.pathname = val.link}}>
                
-              <div id="icon">{val.icon}</div>
+              <div className="nav-icn" id="icon">{val.icon}</div>
               
               <div id="title">
                 {val.title}

@@ -23,18 +23,23 @@
 }
 
 .SidebarList .row {
-  width: 100%;
-  height: 50px;
+  /*width: 100%; 
+   height: 50px; */
   border: 1 px solid black;
-  list-style-type: none;
-  margin: 24px;
-  display: flex;
+  /* list-style-type: none; */
+  margin: 1rem;
+  /* display: flex; */
   flex-direction: column;
   color: aliceblue;
-  justify-content: center;
-  align-items: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* flex-wrap: nowrap; 
+  justify-content: center;*/
+}
+
+.nav-icn{
+  position: relative;
+  left: 10px;
+  margin-bottom: 4px;
 }
 
 /*-----------Heading CSS -------------*/
@@ -75,9 +80,18 @@
 /*-----------Product Card CSS -------------*/
 .product-container {
   transform: scale(0.5);
+  width: 100%;
+  position: relative;
+  bottom: 24rem;
 }
-
-.column 
+.section {
+  width:max-content;
+}
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14rem;
+}
 
 .card-content {
   background-color: transparent;
@@ -163,19 +177,33 @@
   display: block !important;
 }
 /*-----------Login Card CSS -------------*/
+.profilepage {
+  background-image: url('./img/grid_bg_dim.png');
+  background-size: cover;
+  /*height: 100vh;*/
+}
+
 .login {
   justify-content: center;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding-left: 20rem;
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-  padding-right: 20rem;
+  background-color: rgba(0, 0, 0, 0.47);
+  padding-left: 20rem; 
+  /* padding-top: 13rem; */
+  /* padding-bottom: 20rem; */
+  /* padding-right: 20rem; */
   align-self: center;
-  margin-top: 0.5rem;
-
+  margin: 4.5rem;
   border-radius: 0.375rem;
+  /* width: fit-content; */
+  /* height: max-content; */
+  padding: 3rem;
+  /* position: relative; */
+  /* top: 1rem; */
+  /* left: 16rem; */
+  margin-left: 20rem;
+  margin-top: 10rem;
+  box-shadow: 0px 2px 85px 8px rgb(0 255 247 / 48%);
 }
+
 
 .Signin {
   color: white;
@@ -189,26 +217,51 @@
   margin-top: 1rem;
   margin-top: 0;
   margin-bottom: 0;
+  min-width: 250px;
 }
 
 .block {
-  border-radius: 0.375rem; /* This is equivalent to rounded-md */
-  padding-left: 1.5rem; /* This is equivalent to px-6 */
-  padding-right: 1.5rem; /* This is equivalent to px-6 */
-  padding-top: 1.5rem; /* This is equivalent to pt-6 */
-  padding-bottom: 0.25rem; /* This is equivalent to pb-1 */
-  width: 100%; /* This is equivalent to w-full */
-  font-size: 1rem; /* This is equivalent to text-md */
-  color: #fff; /* This is equivalent to text-white */
-  background-color: #4b5563; /* This is equivalent to bg-neutral-700 */
-  appearance: none; /* This is equivalent to appearance-none */
-  outline: none; /* This is equivalent to focus:outline-none */
-  box-shadow: none; /* This is equivalent to focus:ring-0 */
-  border: none; /* This is equivalent to peer */
-  border-bottom: 1px solid #e5e7eb; /* This is equivalent to invalid:border-b-1 */
+  /*border-radius: 0.375rem;  This is equivalent to rounded-md 
+  padding-left: 1.5rem;  This is equivalent to px-6 
+  padding-right: 1.5rem;  This is equivalent to px-6 
+  padding-top: 1.5rem;  This is equivalent to pt-6 
+  padding-bottom: 0.25rem;  This is equivalent to pb-1 
+  width: 100%; This is equivalent to w-full 
+  font-size: 1rem;  This is equivalent to text-md 
+  color: #fff;  This is equivalent to text-white 
+  background-color: #4b5563;  This is equivalent to bg-neutral-700 
+  appearance: none;  This is equivalent to appearance-none 
+  outline: none;  This is equivalent to focus:outline-none 
+  box-shadow: none;  This is equivalent to focus:ring-0 
+  border: none;  This is equivalent to peer 
+  border-bottom: 1px solid #e5e7eb;  This is equivalent to invalid:border-b-1 */
+  border-radius: 0.275rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  color: #fff; 
+  background-color: #313438e0;
+  appearance: none;
+  /* outline: none; */
+  box-shadow: aliceblue;
+  border: 1px solid #69727c;
+  /* border-bottom: 1px solid #8e98a3;*/
+
 }
+
+.login-separator {
+  border-top: 2px solid #fff;
+  margin:0;
+  position: relative;
+  top:1.2rem;
+}
+
 .block::placeholder {
   color: #9ca3af; /* This is equivalent to placeholder */
+
 }
 .absolute {
   position: absolute;
@@ -217,7 +270,7 @@
   font-size: 1rem;
 }
 .text-zinc-400 {
-  color: #f6e05e;
+  color: #747474;
 }
 .duration-150 {
   transition-duration: 0.15s;
@@ -280,6 +333,7 @@
 
 .text-white {
   color: #FFFFFF;
+  font-weight: 700;
 }
 
 .rounded-md {
@@ -331,8 +385,23 @@
   cursor: pointer; /* sets the cursor to a pointer */
 }
 
+.pad-top {
+  padding-top:1rem;
+}
+
+.pad-bot {
+  padding-bottom:1rem;
+}
+
 /*-----------Login Card CSS -------------*/
 
+.short-banner {
+  position: absolute;
+  left: 33px;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
 
 .movie-title {
   color: white;
@@ -364,13 +433,92 @@
 
 .button-container {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.book-now-button,
+.book-now-button{
+  color: #00F0E4;
+    background-color: #232323;
+    border-radius: 0;
+    border: 1px solid #00F0E4;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: 2rem;
+}
+
 .imdb-button {
-  margin-right: 50px;
-  color: red;
-  background-color: #3d3b3d;
-  border-radius: 1rem;
+  color: #000000;
+  background-color: #F6C700;
+  border-radius: 8px;
+  border: 1px solid #F6C700;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-weight: 900;
+  font-size: 1.6rem;
 }
 
+.sw-moviepage-container {
+  height: 100vh;
+  background-color: #241623;
+}
+
+.movie-heading-div {
+  width: 100%;
+  position: relative;
+  top: 9rem;
+  z-index: 1;
+  
+}
+
+.movie-description {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+  top: 7rem;
+  margin-left: 10rem;
+}
+
+.movie-description::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.movie-text-content {
+  float: right;
+  width: 45%;
+  padding-top: 4rem;
+
+}
+
+.sw-movie-poster-left{
+  float: left;
+    width: 55%;
+    height: auto;
+
+}
+
+
+.movie-info-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.movie-info-table th,td{
+  text-align: left;
+  padding:10px;
+}
+
+.movie-info-table th{
+  width:40%;
+}
+
+.movie-info-table tr{
+  padding:1rem;
+}
