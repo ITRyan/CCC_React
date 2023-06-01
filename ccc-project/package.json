@@ -14,11 +14,8 @@
     "@types/jest": "^29.5.1",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
-<<<<<<< HEAD
     "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
-=======
->>>>>>> 968aa39b6346a582fb15811a7d2a82f70ce77f4a
     "bootstrap": "^5.3.0",
     "bulma": "^0.9.4",
     "next-auth": "^4.22.1",
