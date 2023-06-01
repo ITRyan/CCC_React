@@ -46,11 +46,9 @@ const ProfilePage = () => {
               value={password}
             />
           </div>
-<<<<<<< HEAD
           <hr className="login-separator"/>
           <button className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">Login</button>
           <p className="text-neutral-500 mt-12">Want to join us?<span className="text-white ml-1 hover:underline cursor-pointer">Create an account</span></p>
-=======
           <button className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">
             {variant==="login"?"Login":"Sign up"}
           </button>
@@ -65,7 +63,6 @@ const ProfilePage = () => {
               {variant === "login" ? "Create an account" : "Login"}
             </span>
           </p>
->>>>>>> d1751f136deabfebcf24c79051060a74b76acd45
         </div>
       </div>
     </div>
