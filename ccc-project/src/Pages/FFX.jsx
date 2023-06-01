@@ -44,8 +44,6 @@ const ffx = () => {
             <h2 className='movie-title'>Fast X</h2>
             <div className = 'movie-details'>
             <p>Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes.</p>
-            
-            <hr className="separator"/>
 
             <table className="movie-info-table">
               <tr className="pad-top">

@@ -44,8 +44,6 @@ const jw4 = () => {
             <h2 className='movie-title'>John Wick: Chapter 4</h2>
             <div className = 'movie-details'>
             <p>John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</p>
-            
-            <hr className="separator"/>
 
             <table className="movie-info-table">
               <tr className="pad-top">

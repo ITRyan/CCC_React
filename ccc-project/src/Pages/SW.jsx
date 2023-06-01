@@ -45,8 +45,6 @@ const sw = () => {
             <div className = 'movie-details'>
             <p>As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.</p>
             
-            <hr className="separator"/>
-
             <table className="movie-info-table">
               <tr className="pad-top">
                 <th>Show Date</th>
