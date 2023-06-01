@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "../App.css";
 
 const ProductCard = (props) => {
@@ -6,7 +6,7 @@ const ProductCard = (props) => {
         <div className = "product-card">
             <div className = "card-image">
                 <figure className="image is-2">
-                    <img src ={props.img} />
+                    <img src ={props.img} alt="img"/>
                 </figure>         
             </div>
             <div className="card-content" >

@@ -137,8 +137,10 @@ html {
 .back-img {
   position: relative;
   top: 30rem;
-  right: 10rem;
+  right: 11rem;
   height: 20rem;
+  scale: 1.5;
+  z-index: -1;
 }
 
 .product-card {

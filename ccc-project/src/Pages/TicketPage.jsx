@@ -9,6 +9,7 @@ const TicketPage = () => {
 
   return (
     <div>
+      <Sidebar/>
       <h1>Upcoming Booking</h1>
       <div className="ticketing-form">
         <div className="form-row">
