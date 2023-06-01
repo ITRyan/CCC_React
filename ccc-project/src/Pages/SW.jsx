@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 import starwar from "../img/StarWar.jpeg";
 import "../App.css";
 import Sidebar from "../Components/Sidebar";
-<<<<<<< HEAD
 import SWmovieposter from "../img/productpage_starwar.png";
 import returnbtn from "../icn/icn_return.svg";
 import shortbanner from "../img/AvengersBanner_short.png";
-=======
->>>>>>> d1751f136deabfebcf24c79051060a74b76acd45
 
 const sw = () => {
   const handleBookNow = () => {
@@ -47,7 +44,7 @@ const sw = () => {
             <div className = 'movie-details'>
             <p>As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.</p>
             
-            <hr className="separator"/>
+            {/* <hr className="separator"/> */}
 
             <table className="movie-info-table">
               <tr className="pad-top">
