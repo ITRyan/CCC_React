@@ -55,7 +55,7 @@ html {
 /*-----------Heading CSS -------------*/
 
 .heading-div {
-  width: 200%;
+  width: 102.5%;
   bottom: 22rem;
   z-index: 1;
   margin-top: 1rem;
@@ -497,7 +497,7 @@ html {
 }
 
 .movie-heading-div {
-  width: 200%;
+  width: 102.5%;
   position: relative;
   top: 9rem;
   z-index: 1;
@@ -715,9 +715,9 @@ p.text span {
 }
 
 .submit-booking-btn {
-  position: absolute;
-  bottom: 5rem;
-  left: 65rem;
+  position: relative;
+  bottom: -38rem;
+  left: 64rem;
   color: #00F0E4;
   background-color: #232323;
   border-radius: 0;
