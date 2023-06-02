@@ -99,6 +99,9 @@ html {
 /* .section {
   width:max-content;
 } */
+.movie-page-link {
+  text-decoration: none;
+}
 
 .columns {
   display: flex;
@@ -551,3 +554,41 @@ html {
 .movie-info-table tr{
   padding:1rem;
 }
+
+
+/*-----------Ticket buying CSS -------------*/
+
+.ticketing-form {
+  position: relative;
+  color: white;
+}
+
+.form-row {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.form-row label{
+  padding: 0.5rem;
+}
+
+.form-row select,input{
+  min-width: 10rem;
+  background-color: #3e3e3e;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 0.375rem;
+  padding: 0.2rem;
+}
+
+
+
+
+
+
+
+
+/*-----------Ticket buying CSS -------------*/

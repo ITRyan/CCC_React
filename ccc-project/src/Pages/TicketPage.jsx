@@ -15,6 +15,9 @@ const TicketPage = () => {
         <div className="form-row">
           <label htmlFor="movie">Movie:</label>
           <select id="movie">
+            <option value="starwars">Star Wars : The Force Awakens</option>
+            <option value="johnwick">John Wick : Chapter 4</option>
+            <option value="fastx">Fast X</option>
           </select>
         </div>
         <div className="form-row">
@@ -26,8 +29,12 @@ const TicketPage = () => {
           <input type="time" id="time" />
         </div>
         <div className="form-row">
-          <label htmlFor="cinema">Cinema:</label>
-          <input type="text" id="cinema" />
+          <label htmlFor="veune">Cinema:</label>
+            <select className='veune-dropdown'>
+              <option value="venue1">IFC Cinema</option>
+              <option value="venue2">K11 Musea Cinema</option>
+              <option value="venue3">Times Square Cinema</option>
+            </select>
         </div>
         <div className="form-row">
           <label htmlFor="quantity">Quantity:</label>
