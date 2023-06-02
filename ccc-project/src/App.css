@@ -55,7 +55,7 @@ html {
 /*-----------Heading CSS -------------*/
 
 .heading-div {
-  width: 100%;
+  width: 200%;
   bottom: 22rem;
   z-index: 1;
   margin-top: 1rem;
@@ -497,7 +497,7 @@ html {
 }
 
 .movie-heading-div {
-  width: 100%;
+  width: 200%;
   position: relative;
   top: 9rem;
   z-index: 1;
@@ -597,12 +597,13 @@ html {
   position: relative;
   top: 13rem;
   color: white;
-  left: 12rem;
+  left: 13rem;
   display: flex;
   flex-direction: row;
   border-top: 1px solid #858585;
   border-bottom: 1px solid #858585;
   height: 450px;
+  width: max-content;
 }
 
 .ticket-table tr{
@@ -617,6 +618,7 @@ html {
   text-align: center;
   padding-left: 1rem;
   padding-right:1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -624,6 +626,8 @@ html {
   border-bottom: 1px solid #858585;
   width: 100%;
   text-align: center;
-  padding-left: 1rem;
-  padding-right:1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
