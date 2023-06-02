@@ -586,9 +586,44 @@ html {
 
 
 
-
-
-
-
-
 /*-----------Ticket buying CSS -------------*/
+
+
+
+
+.ticket-table {
+  caption-side: bottom;
+  border-collapse: collapse;
+  position: relative;
+  top: 13rem;
+  color: white;
+  left: 12rem;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
+  height: 450px;
+}
+
+.ticket-table tr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-table th{
+  border-bottom: 1px solid #858585;
+  width: 100%;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right:1rem;
+}
+
+
+.ticket-table td{
+  border-bottom: 1px solid #858585;
+  width: 100%;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right:1rem;
+}

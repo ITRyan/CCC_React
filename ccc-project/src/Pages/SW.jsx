@@ -6,6 +6,7 @@ import Sidebar from "../Components/Sidebar";
 import SWmovieposter from "../img/productpage_starwar.png";
 import returnbtn from "../icn/icn_return.svg";
 import shortbanner from "../img/AvengersBanner_short.png";
+import TicketPage from "../Pages/TicketPage";
 
 const sw = () => {
   const handleBookNow = () => {
@@ -93,7 +94,9 @@ const sw = () => {
             </select> */}
 
             <div className="button-container">
+              <Link to="/ticketform">
               <button onClick={handleBookNow} className="book-now-button">Book Now</button>
+              </Link>
               <button onClick={handleIMDb} className="imdb-button">IMDb</button>
             </div>
           </div>

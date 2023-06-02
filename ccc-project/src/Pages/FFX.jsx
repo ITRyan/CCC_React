@@ -6,6 +6,7 @@ import Sidebar from "../Components/Sidebar";
 import SWmovieposter from "../img/productpage_FFX.png";
 import returnbtn from "../icn/icn_return.svg";
 import shortbanner from "../img/AvengersBanner_short.png";
+import TicketPage from "../Pages/TicketPage";
 
 
 const ffx = () => {
@@ -92,7 +93,9 @@ const ffx = () => {
             </select> */}
 
             <div className="button-container">
+              <Link to="/ticketform">
               <button onClick={handleBookNow} className="book-now-button">Book Now</button>
+              </Link>
               <button onClick={handleIMDb} className="imdb-button">IMDb</button>
             </div>
           </div>

@@ -6,6 +6,7 @@ import Sidebar from "../Components/Sidebar";
 import SWmovieposter from "../img/productpage_jw.png";
 import returnbtn from "../icn/icn_return.svg";
 import shortbanner from "../img/AvengersBanner_short.png";
+import TicketPage from "../Pages/TicketPage";
 
 
 const jw4 = () => {
@@ -92,7 +93,9 @@ const jw4 = () => {
             </select> */}
 
             <div className="button-container">
+              <Link to="/ticketform">
               <button onClick={handleBookNow} className="book-now-button">Book Now</button>
+              </Link>
               <button onClick={handleIMDb} className="imdb-button">IMDb</button>
             </div>
           </div>
