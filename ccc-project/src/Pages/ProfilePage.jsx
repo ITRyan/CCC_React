@@ -13,6 +13,7 @@ const ProfilePage = () => {
     );
   }, []);
   return (
+    <>
     <div className="profilepage">
       <div className="flex">
         <Sidebar />
@@ -66,6 +67,7 @@ const ProfilePage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
