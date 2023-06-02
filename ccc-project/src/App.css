@@ -677,16 +677,28 @@ p.text span {
 /*-----------Ticket buying CSS -------------*/
 
 .ticketing-form {
-  position: relative;
+  position: absolute;
   color: white;
+  left: 16rem;
+  top: 14rem;
+  float: left;
+  width: 50%;
+}
+
+.seatplan {
+  float: right;
+  width: 60%;
+  scale: 40%;
+  position: absolute;
+  left: 34rem;
+  top: -6rem;
 }
 
 .form-row {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
+  display: flex;
+  text-align: left;
+  width: 18rem;
+  flex-direction: column;
 }
 
 .form-row label{
@@ -701,6 +713,28 @@ p.text span {
   border-radius: 0.375rem;
   padding: 0.2rem;
 }
+
+.submit-booking-btn {
+  position: absolute;
+  bottom: 5rem;
+  left: 65rem;
+  color: #00F0E4;
+  background-color: #232323;
+  border-radius: 0;
+  border: 1px solid #00F0E4;
+  padding: 0.5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  font-weight: 800;
+    
+}
+
+.submit-booking-btn:hover {
+  background-color: #00F0E4;
+  color:#232323;
+  font-weight:800;
+}
+
 
 
 
