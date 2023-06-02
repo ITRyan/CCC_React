@@ -5,6 +5,7 @@ import HomePage from "../Pages/HomePage";
 import ProfilePage from "../Pages/auth";
 import TicketPage from "../Pages/TicketPage";
 import Movie from "../Pages/SW";
+import CinemaPage from "../Pages/CinemaPage";
 import SWpage from "../Pages/SW";
 import JWpage from "../Pages/JW4";
 import FFXpage from "../Pages/FFX";
@@ -17,6 +18,7 @@ const Router = () => {
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/ticketform" element={<TicketPage />} />
       <Route path="/movie" element={<Movie />} />
+      <Route path="/cinema" element={<CinemaPage/>} />
       <Route path="/starwarpage" element={<SWpage/>}/>
       <Route path="/johnwickpage" element={<JWpage/>}/>
       <Route path="/fastxpage" element={<FFXpage/>}/>
