@@ -3,6 +3,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import UpcomingTicket from "../Pages/UpcomingTicket";
+
 export const SidebarData = [
   {
     title: "Home",
@@ -17,7 +19,7 @@ export const SidebarData = [
   {
     title: "Ticket",
     icon: <ConfirmationNumberIcon />,
-    link: "/ticket",
+    link: "/upcomingticket",
   },
   {
     title: "Profile",

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import starwar from "../img/StarWar.jpeg";
+//import starwar from "../img/StarWar.jpeg";
 import "../App.css";
 import Sidebar from "../Components/Sidebar";
 import SWmovieposter from "../img/productpage_starwar.png";
 import returnbtn from "../icn/icn_return.svg";
 import shortbanner from "../img/AvengersBanner_short.png";
+import TicketPage from "../Pages/TicketPage";
 
 const sw = () => {
   const handleBookNow = () => {
@@ -28,7 +29,7 @@ const sw = () => {
 
         <div className="movie-heading-div">
           <div className="heading-container">
-           <Link to="/" className='return-button'><img src={returnbtn} /></Link>
+           <Link to="/" className='return-button'><img src={returnbtn} alt="btn"/></Link>
             <p className="heading-text">Top Rated Movie: Star Wars: The Force Awakens</p>
           </div>
         </div>
@@ -93,7 +94,9 @@ const sw = () => {
             </select> */}
 
             <div className="button-container">
+              <Link to="/ticketform">
               <button onClick={handleBookNow} className="book-now-button">Book Now</button>
+              </Link>
               <button onClick={handleIMDb} className="imdb-button">IMDb</button>
             </div>
           </div>
