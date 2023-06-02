@@ -27,22 +27,12 @@ const HomePage = () => {
     setCount(newCount);
   };
 
-  //movie sequen [id = index] array
 
   return (
     <>
       <Sidebar/>
       <div className="home-body">
         <CarouselBanner />
-        {/*<Routes>
-          <Route path="/starwarpage" element={<SWpage/>}/>
-          <Route path="/johnwickpage" element={<JWpage/>}/>
-          <Route path="/fastxpage" element={<FFXpage/>}/>
-        
-         </Routes> */}
-
-
-
       
         <div className="heading-div">
           <div className="heading-container">
